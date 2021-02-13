@@ -63,6 +63,14 @@ class TableViewCellGraphics: UITableViewCell {
         }
         return colors
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        values = []
+        texts = []
+        hex = []
+    }
 
 }
 
